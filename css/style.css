@@ -150,7 +150,7 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
   transform: translate(-50%,-50%) rotate(45deg);
 }
 .middle .btn3:hover::before{
-  height: 380%;
+  height: 460%;
 }
 .middle .btn:hover{
   border: 2px solid #e9ab00;
@@ -343,4 +343,254 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
   color: #666666;
   font-size: 14px;
   line-height: 24px;
+}
+
+/* ==================================================================================================
+                                              Project Part Css
+====================================================================================================== */
+#project{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.fact{
+  padding: 25px;
+  box-shadow: 0px 3px 7px 2px #ececec;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 180px;
+}
+.facts{
+  flex: 1 1 auto;
+}
+.facts h4{
+  color: #203260;
+  font-size: 20px;
+  font-weight: 600;
+}
+.facts p{
+  color: #666666;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.facts h3{
+  color: #3aa40c;
+  font-size: 40px;
+  font-weight: 600;
+}
+.facts span{
+  color: #203260;
+  font-weight: 600;
+  font-size: 16px;
+}
+.project-details{
+  margin-top: 50px;
+}
+.pro-img{
+  position: relative;
+  overflow: hidden;
+}
+.pro-img img{
+  overflow: hidden;
+  transition: all linear .6s;
+}
+.pro-img::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+}
+.project-content{
+  margin: 0 20px;
+  background: #ffffff;
+  box-shadow: 0px 3px 7px 2px rgb(236, 236, 236,0.5);
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  transition: all linear .3s;
+}
+.project-content h3{
+  color: #3aa40c;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all linear .3s;
+}
+.project-content span{
+  color: #203260;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all linear .3s;
+}
+.project-content:hover{
+  background: #e9ab00;
+}
+.project-content:hover h3,.project-content:hover  span{
+  color: #ffffff;
+}
+.pro-img:hover img{
+  transform: scale(1.2);
+}
+
+
+/* =====================================================================================================
+                                               Testimonial Part Css
+======================================================================================================= */
+#testimonial{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: #f5f5f5;
+}
+.testi-details{
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 3px 7px 2px #ececec;
+  margin-bottom: 40px;
+  transition: all linear .3s;
+}
+.testi-details:hover{
+  transform: translateY(-5px);
+}
+.testi-details:hover .tesi-content .testi-item img{
+  border-color: #e9ab00;
+  transform: scale(0.95);
+}
+.testi-item img{
+  border-radius: 50%;
+  border: 5px solid #ececec;
+  transition: all linear .6s;
+  overflow: hidden;
+  transform: scale(1);
+}
+.tesi-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.tesi-content .testi-item{
+  margin-right: 40px;
+}
+.testi-item h6{
+  color: #3aa40c;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.testi-item span{
+  color: #203260;
+  font-size: 16px;
+  font-size: 500;
+}
+.testi-details p{
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* ==================================================================================================
+                                               Funfact Part Css
+===================================================================================================== */
+#funfact{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #203260;
+}
+.funfact-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mr-2{
+  margin: 0!important;
+}
+.factfact-item h6{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+
+/* ====================================================================================================
+                                                 News Part Css
+====================================================================================================== */
+#news{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.news-details{
+  transition: all linear .3s;
+}
+.news-details:hover .news-img img{
+  transform: scale(1.2);
+}
+.news-img img{
+  overflow: hidden;
+  transition: all linear .6s;
+}
+.news-img{
+ position: relative;
+ overflow: hidden;
+ transition: all linear .6s;
+}
+.news-img::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+}
+.news-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.news-item:nth-child(1){
+  margin-right: 10px;
+}
+.news-item i{
+  color: #3aa40c;
+  font-size: 14px;
+  transition: all linear .3s;
+}
+.news-item span{
+  color: #203260;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all linear .3s;
+}
+.news-contents{
+  margin: 0 25px;
+  background: #ffffff;
+  box-shadow: 0px 3px 7px 2px rgb(236, 236, 236,0.3);
+  padding: 20px;
+  position: relative;
+  top: -40px;
+  transition: all linear .3s;
+}
+.news-blog span{
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all linear .3s;
+}
+.news-details:hover .news-contents{
+  background: #e9ab00;
+  transform: translateY(-5px);
+}
+.news-details:hover .news-contents .news-content .news-item i,.news-details:hover .news-contents .news-content .news-item span{
+  color: #ffffff;
+}
+.news-details:hover .news-contents .news-blog span{
+  color: #ffffff;
 }
