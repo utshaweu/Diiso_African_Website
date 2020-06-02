@@ -429,7 +429,7 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
   transition: all linear .3s;
 }
 .project-content:hover{
-  background: #e9ab00;
+  background: #FFC31D;
 }
 .project-content:hover h3,.project-content:hover  span{
   color: #ffffff;
@@ -458,7 +458,7 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
   transform: translateY(-5px);
 }
 .testi-details:hover .tesi-content .testi-item img{
-  border-color: #e9ab00;
+  border-color: #FFC31D;
   transform: scale(0.95);
 }
 .testi-item img{
@@ -585,7 +585,7 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
   transition: all linear .3s;
 }
 .news-details:hover .news-contents{
-  background: #e9ab00;
+  background: #FFC31D;
   transform: translateY(-5px);
 }
 .news-details:hover .news-contents .news-content .news-item i,.news-details:hover .news-contents .news-content .news-item span{
@@ -593,4 +593,255 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
 }
 .news-details:hover .news-contents .news-blog span{
   color: #ffffff;
+}
+
+
+/* =====================================================================================================
+                                           Request Part Css
+======================================================================================================= */
+#request{
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background: url(../images/quote.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#request::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+}
+.request-details .card{
+  border-radius: 0;
+  border: 1px solid #dce0e8;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 7px 2px rgb(236, 236, 236,0.3);
+}
+.request-details .card-header{
+  border-bottom: 0;
+  background: #f5f5f5;
+}
+.request-details .btn-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #203260;
+  white-space: normal;
+  transition: all linear .3s;
+}
+.request-details .btn-link.focus, .btn-link:focus {
+  text-decoration: none;
+  color: #203260;
+}
+.request-details .btn-link:hover {
+  color: #3aa40c;
+  text-decoration: none;
+}
+.request-details .card-body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.quote-form{
+  background: #ffffff;
+  padding: 20px 35px 42px;
+  margin-left: 20px;
+  box-shadow: 0px 3px 7px 2px rgb(236, 236, 236,0.3);
+}
+.quote-form h6{
+  color: #203260;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.quote-form #formGroupExampleInput,.quote-form #exampleFormControlInput1,.quote-form #formGroupExampleInput2{
+  height: calc(2.60rem + 2px);
+}
+.quote-form .form-control{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #dce0e8;
+}
+.quote-form .form-control:focus {
+  color: #203260;
+  border-color: #3aa40c;
+  box-shadow: none;
+}
+.form-btn {
+  margin-top: 30px;
+}
+.form-btn .btn{
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 15px 0;
+  background: #3aa40c;
+  border-color: #3aa40c;
+  transition: all linear .3s;
+}
+.form-btn .btn:hover{
+  background: transparent;
+  color: #3aa40c;
+}
+
+/* =======================================================================================================
+                                                Contact Part Css
+======================================================================================================== */
+#contact{
+}
+.contact-bg{
+  background: #ffffff;
+  box-shadow: 0px 3px 7px 2px rgb(236, 236, 236,0.15);
+  padding: 10px 0;
+  padding-left: 40px;
+  position: relative;
+  top: 75px;
+}
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+}
+.contact-item{
+  width: 20%;
+}
+.contact-item i{
+  color: rgba(58, 164, 12,0.4);
+  font-size: 80px;
+}
+.contact-items{
+  width: 80%;
+}
+.contact-items h6{ 
+  color: #203260;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.contact-items span{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+/* ========================================================================================================
+                                              Footer Part Css
+========================================================================================================= */
+#footer{
+  padding-top: 160px;
+  padding-bottom: 70px;
+  background: #203260;
+}
+.footer-details h6{
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.footer-details p{
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+.footer-icon i{
+  color: #fff;
+  font-size: 18px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid #31426c;
+  border-radius: 50%;
+  transition: all linear .3s;
+}
+.footer-icon i:hover{
+ background: #3aa40c;
+ border: 1px solid #3aa40c;
+}
+.footer-details ul li i{
+  margin-right: 10px;
+  color: #506290;
+  transition: all linear .3s;
+}
+.footer-details ul li a{
+  color: #ececec;
+  transition: all linear .3s;
+}
+.footer-details ul li{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.footer-details ul li:hover i,.footer-details ul li:hover a{
+  color: #3aa40c;
+  transform: translateX(5px);
+}
+.footer-details .form-control{
+  font-family: 'Poppins', sans-serif;
+  height: calc(2.9rem + 2px);
+  border-radius: 0;
+}
+.footer-details .form-control:focus{
+  box-shadow: none;
+  border-color: #3aa40c;
+}
+.f-btn .btn{
+  border-radius: 0;
+  color: #ffffff;
+  background: #3aa40c;
+  border-color: #3aa40c;
+  padding: 10px 20px 13px;
+}
+
+/* =====================================================================================================
+                                          Footer Bottom Part Css
+======================================================================================================= */
+#footer-btm{
+  background: #203260;
+}
+.footer-bg{
+  border-top: 1px solid #31426c;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+#footer-btm h6{
+  color: #f5f5f5;
+  font-size: 16px;
+  font-weight: 600;
+}
+#footer-btm p{
+  text-align: right;
+  color: #dce0e8;
+  font-size: 16px;
+  font-weight: 600;
+}
+#footer-btm p a{
+  color: #dce0e8;
+  transition: all linear .3s;
+}
+#footer-btm p a:hover{
+  color: #3aa40c;
 }
