@@ -74,6 +74,10 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
 }
 .navbar{
   background: #f5f5f5;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  top: 52px;
 }
 .navbar-light .navbar-nav .nav-link {
   font-family: 'Poppins', sans-serif;
@@ -132,8 +136,8 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
 .banner-content{
   position: relative;
   z-index: 9;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 60%;
+  transform: translateY(-60%);
 }
 .middle .btn{
   position: relative;
