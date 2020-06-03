@@ -90,7 +90,22 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   color: #3aa40c;
 }
-
+.navbar-light .navbar-nav .nav-link.active{
+  color: #3aa40c;
+}
+.menu-bg{
+  background: #ffffff;
+  position: fixed;
+  animation: bg 1s;
+  width: 100%;
+  top: 0;
+  z-index: 99999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+@keyframes bg{
+  from{top: -50px;}
+  to{top: 0px;}
+}
 /* =======================================================================================================
                                              Banner Part Css
 ========================================================================================================= */
@@ -606,6 +621,7 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
 }
 #request::after{
@@ -844,4 +860,101 @@ h1,h2,h3,h4,h5,h6,a,p,span,ul,ol,strong{
 }
 #footer-btm p a:hover{
   color: #3aa40c;
+}
+
+/* ===============================================================================================
+                                           Back to Top Part Css
+=================================================================================================== */
+.back-to-top{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  display: none;
+}
+.back-to-top i{
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #3aa40c;
+  border-radius: 3px;
+}
+
+/* ====================================================================================================
+                                            Preloader Part Css
+======================================================================================================= */
+.preloader{
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  position: fixed;
+  z-index: 99999999;
+}
+#loader {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3aa40c;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #31426c;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e9ab00;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0%   {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0%   {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
 }

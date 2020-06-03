@@ -8,15 +8,23 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!-- Preloader Part Start -->
+  <div class="preloader">
+    <div id="loader"></div>
+  </div>
+  <!-- Preloader Part End -->
+
   <!-- Sub Navbar Part Start -->
   <section id="sub-nav">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="sub-nav-container">
+          <div class="sub-nav-container wow slideInRight" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="sub-nav-item">
               <div class="sub-social-icon">
                 <i class="fas fa-phone-alt"></i>
@@ -59,25 +67,25 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#about">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#service">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#project">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Testimonials</a>
+          <a class="nav-link" href="#testimonial">Testimonials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="#news">News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -94,8 +102,8 @@
             <h1>We are the biggest company in the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo sint quam aperiam? Soluta, ipsam.</p>
             <div class="middle">
-              <a href="#" class="btn btn3">Read More</a>
-              <a href="#" class="btn btn3">Contact Us</a>
+              <a href="#about" class="btn btn3">Read More</a>
+              <a href="#contact" class="btn btn3">Contact Us</a>
             </div>
           </div>
         </div>
@@ -109,7 +117,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <div class="content-details">
+          <div class="content-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <img src="images/c1.jpg" alt="image" class="w-100">
             <div class="overlay">
               <div class="over-content">
@@ -123,7 +131,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="content-details">
+          <div class="content-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <img src="images/c3.jpg" alt="image" class="w-100">
             <div class="overlay">
               <div class="over-content">
@@ -137,7 +145,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="content-details">
+          <div class="content-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <img src="images/c2.jpg" alt="image" class="w-100">
             <div class="overlay">
               <div class="over-content">
@@ -161,7 +169,7 @@
     <div class="container about-contents">
       <div class="row">
         <div class="col-lg-6">
-          <div class="about-content">
+          <div class="about-content wow slideInLeft" data-wow-duration="1.5s" data-wow-delay=".8s">
             <h3>Leading the way in building and civil construction in africa</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dicta nostrum nisi. Dolores, tempore voluptatem eveniet velit est consectetur eos maiores natus modi quo possimus commodi illo in aspernatur quia!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab cumque omnis obcaecati maiores blanditiis officiis?</p>
@@ -171,7 +179,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="about-content">
+          <div class="about-content wow slideInRight" data-wow-duration="1.5s" data-wow-delay=".8s">
             <img src="images/about.jpg" alt="about" class="w-100">
           </div>
         </div>
@@ -192,7 +200,7 @@
       </div>
       <div class="row">
         <div class="col-lg-4">
-          <div class="service-container">
+          <div class="service-container wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="service-card">
                 <div class="icon">
                   <i class="fas fa-hard-hat"></i>
@@ -208,7 +216,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="service-container">
+          <div class="service-container wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="service-card">
                 <div class="icon">
                   <i class="fas fa-tools"></i>
@@ -224,7 +232,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="service-container">
+          <div class="service-container wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="service-card">
                 <div class="icon">
                   <i class="fas fa-project-diagram"></i>
@@ -240,7 +248,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="service-container">
+          <div class="service-container wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="service-card">
                 <div class="icon">
                   <i class="fas fa-home"></i>
@@ -256,7 +264,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="service-container">
+          <div class="service-container wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="service-card">
                 <div class="icon">
                   <i class="fas fa-paint-roller"></i>
@@ -272,7 +280,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="service-container">
+          <div class="service-container wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="service-card">
                 <div class="icon">
                   <i class="fas fa-th"></i>
@@ -338,7 +346,7 @@
       </div>
       <div class="row">
         <div class="col-lg-4">
-          <div class="project-details">
+          <div class="project-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="pro-img">
               <img src="images/p1.jpg" alt="project-1" class="w-100">
             </div>
@@ -349,7 +357,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="project-details">
+          <div class="project-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="pro-img">
               <img src="images/p2.jpg" alt="project-1" class="w-100">
             </div>
@@ -360,7 +368,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="project-details">
+          <div class="project-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="pro-img">
               <img src="images/p3.jpg" alt="project-1" class="w-100">
             </div>
@@ -392,7 +400,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <div class="testi-details">
+          <div class="testi-details wow slideInLeft" data-wow-duration="2s" data-wow-delay=".5s">
             <div class="tesi-content">
               <div class="testi-item">
                 <img src="images/t1.jpg" alt="t1" style="width: 100px; height: 100px;">
@@ -406,7 +414,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="testi-details">
+          <div class="testi-details wow slideInRight" data-wow-duration="2s" data-wow-delay=".5s">
             <div class="tesi-content">
               <div class="testi-item">
                 <img src="images/t2.jpg" alt="t1" style="width: 100px; height: 100px;">
@@ -435,12 +443,12 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="funfact-container">
-            <div class="factfact-item">
+            <div class="factfact-item wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
               <h6>We’ll identify your needs and enhance your business growth.</h6>
             </div>
-            <div class="factfact-item">
+            <div class="factfact-item wow pulse" data-wow-duration="1.5s" data-wow-delay=".8s">
               <div class="middle">
-                <a href="#" class="btn btn3 mr-2">REQUEST A QUICK QUOTE</a>
+                <a href="#request" class="btn btn3 mr-2">REQUEST A QUICK QUOTE</a>
               </div>
             </div>
           </div>
@@ -462,7 +470,7 @@
       </div>
       <div class="row">
         <div class="col-lg-4">
-          <div class="news-details">
+          <div class="news-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="news-img">
               <img src="images/n1.jpg" alt="image" class="w-100">
             </div>
@@ -484,7 +492,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="news-details">
+          <div class="news-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="news-img">
               <img src="images/n2.jpg" alt="image" class="w-100">
             </div>
@@ -506,7 +514,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="news-details">
+          <div class="news-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <div class="news-img">
               <img src="images/n3.jpg" alt="image" class="w-100">
             </div>
@@ -542,7 +550,7 @@
     <div class="container about-contents">
       <div class="row">
         <div class="col-lg-6">
-          <div class="request-details">
+          <div class="request-details wow slideInLeft" data-wow-duration="1.5s" data-wow-delay=".8s">
             <div id="accordion">
               <div class="card">
                 <div class="card-header" id="headingOne">
@@ -619,7 +627,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="quote-form">
+          <div class="quote-form wow slideInRight" data-wow-duration="1.5s" data-wow-delay=".8s">
             <h6>REQUEST A FREE QUOTE</h6>
             <form>
               <div class="form-group">
@@ -647,7 +655,7 @@
 
   <!-- Conatact Part Start -->
   <section id="contact">
-    <div class="container contact-bg">
+    <div class="container contact-bg wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".8s">
       <div class="row">
         <div class="col-lg-4 p-0">
           <div class="contact-container">
@@ -694,7 +702,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3">
-          <div class="footer-details">
+          <div class="footer-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <h6>About Company</h6>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora repellat exercitationem nulla recusandae nisi maiores facilis beatae ex sit facere?</p>
             <div class="footer-icon">
@@ -706,7 +714,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="footer-details">
+          <div class="footer-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <h6>Usefull Links</h6>
             <ul>
               <li><i class="fas fa-angle-double-right"></i><a href="#">About Company</a></li>
@@ -719,7 +727,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="footer-details">
+          <div class="footer-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <h6>Our Services</h6>
             <ul>
               <li><i class="fas fa-angle-double-right"></i><a href="#">General Contracting</a></li>
@@ -732,7 +740,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="footer-details">
+          <div class="footer-details wow fadeIn" data-wow-duration="2s" data-wow-delay=".8s">
             <h6>Subscribe</h6>
             <p>Lit sed The Best in dolor sit amet consectetur adipisicing elit sedconsectetur adipisicing</p>
             <form>
@@ -761,10 +769,10 @@
   <section id="footer-btm">
     <div class="container footer-bg">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay=".5s">
           <h6>2020 © Copyright, Diiso Africa Ltd.. All Rights Reserved.</h6>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 wow slideInRight" data-wow-duration="1.5s" data-wow-delay=".8s">
           <p>Developed By <a href="https://shebawebtech.com/" target="_blank">Shebawebtech.com</a></p>
         </div>
       </div>
@@ -772,10 +780,17 @@
   </section>
   <!-- Footer Bottom Part End -->
 
+  <!--Back to Top Part Start-->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-angle-double-up"></i>
+  </a>
+  <!--Back to Top Part End-->
+
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/waypoints.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
 </html>
